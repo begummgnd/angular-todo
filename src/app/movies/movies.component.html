@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="form-group">
+   <form #form="ngForm" (ngSubmit)="createMovie(); cleanForm(form)">
+    <div class="form-control">
+      <input type="text" pInputText id="movieName" [(ngModel)]="model.movieName" type="text"  
+      (blur)="log(movieName)" #movieName="ngModel" required minlength = "5" placeholder="enter movie name" name="movieName"/>
+      <label for="movieName">Movie Name</label>
+      <div *ngIf="movieName.invalid && (movieName.touched || movieName.dirty)">
+        <p *ngIf="movieName.errors?.required">gerekli alan</p>
+        <p *ngIf="movieName.errors?.minlength">min 5 karakter girmelisiniz.</p>
+      </div>
+  </div>
+  <button [disabled]=form.invalid type="submit">Tıkla</button>
+</form>
+</div>
+</div>
+ 
+  

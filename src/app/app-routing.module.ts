@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MoviesComponent } from './movies/movies.component';
+import { HttpClientModule } from '@angular/common/http'; // HttpClientModule'ü import edin
 
 const routes: Routes = [
   { path: 'movies', component: MoviesComponent },
@@ -8,7 +9,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),HttpClientModule ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

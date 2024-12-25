@@ -75,3 +75,38 @@ container {
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth color transition on hover */
   }
+
+  .ng-touched {
+    border: 2px solid red;
+  }
+
+  .card-header {
+    
+    background: #9ec6e0;
+    border-top: 1px solid #ddd; /* Üst kenarlık */
+    border-left: 1px solid #ddd; /* Sol kenarlık */
+    border-right: 1px solid #ddd; /* Sağ kenarlık */
+    border-bottom: 1px solid #ddd; /* Alt kenarlık */
+    border-radius: 10px 10px 0 0; /* Alt köşelerde yuvarlama */
+  }
+
+  .card-content {
+    
+    background: #d3d3d3;
+    border-top: 1px solid #ddd; /* Üst kenarlık */
+    border-left: 1px solid #ddd; /* Sol kenarlık */
+    border-right: 1px solid #ddd; /* Sağ kenarlık */
+    border-bottom: 1px solid #ddd; /* Alt kenarlık */
+  }
+  .card-footer {
+    display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 20px;
+    background: #9ec6e0;
+    border-top: 1px solid #ddd; /* Üst kenarlık */
+    border-left: 1px solid #ddd; /* Sol kenarlık */
+    border-right: 1px solid #ddd; /* Sağ kenarlık */
+    border-bottom: 1px solid #ddd; /* Alt kenarlık */
+    border-radius: 0 0 10px 10px; /* Alt köşelerde yuvarlama */
+  }

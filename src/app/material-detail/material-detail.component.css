@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: center;  /* Yatay ortalama */
+    align-items: center;  /* Dikey ortalama */
+    /* Dikey ortalama */
+    height: 100%;
+    width: 100%;
+    flex-direction: column; 
+    /* Yüksekliği tam yapalım */
+}
+
+.header {
+    padding: 20px;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    /* Yatayda ortalamak için */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Gölge efekti */
+    border-radius: 8px;
+    /* Köşeleri yuvarlamak için */
+    margin-bottom: 20px;
+    /* Header ile content arasına boşluk ekleyelim */
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+    background-color: #f0ecec;
+    text-align: center;
+    /* İçeriği yatayda ortalamak için */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Gölge efekti */
+    border-radius: 8px;
+    /* Köşeleri yuvarlak yapmak için */
+}
+
+.footer{
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #f0ecec;
+    text-align: center;
+    /* İçeriği yatayda ortalamak için */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Gölge efekti */
+    border-radius: 8px;
+    /* Köşeleri yuvarlak yapmak için */
+}
+
+.label-div {
+    display: inline-block;  /* Inline-block ile öğeleri yan yana getiriyoruz */
+    width: 15%;  /* Etiket genişliği tam olacak */
+    text-align: center;
+}
+
+.div-center{
+    display: flex;
+    justify-content: center;  /* Yatay ortalama */
+    align-items: center;  /* Dikey ortalama */
+    /* Dikey ortalama */
+    height: 100%;
+    flex-direction: column; 
+}
+
+p-divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column; /* İçeriği dikeyde hizala */
+    align-items: center;  /* Yatayda ortala */
+}
+
+.button-container {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    /* yatay ortalama */
+    align-items: center;
+    /* dikey ortalama */
+}
+
+.label-text {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.label-div-btn{
+    display: inline-block;  /* Inline-block ile öğeleri yan yana getiriyoruz */
+    width: 75%;  /* Etiket genişliği tam olacak */
+    text-align: center;
+}
